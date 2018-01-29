@@ -1,0 +1,17 @@
+<body onload="show()">
+
+	<script type="text/javascript">
+		function show(){
+			setInterval(function(){
+				rec = new Date();
+				// console.log(rec)
+				document.getElementById("divdata").innerHTML=rec.getHours() + ":" + rec.getMinutes() + " : "+
+				rec.getSeconds();
+
+			},1000)
+
+		}
+	</script>
+	<div id="divdata">test1</div>
+	
+</body>

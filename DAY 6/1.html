@@ -1,0 +1,31 @@
+<button onclick="check1()">Interval</button>
+<button onclick="check2()">Timeout</button>
+<p id="para1">Test 1</p>
+<p id="para2">Test 2</p>
+<script type="text/javascript">
+	function check1() {
+		// body...
+		cnt=1
+		document.getElementById("para1").innerHTML=cnt
+
+		setInterval(function() {
+			// body...
+			document.getElementById("para1").innerHTML=cnt
+			cnt++
+		},1000)
+}
+		function check2() {
+			// body...
+			console.log(check2)
+					
+		cnt=1
+		document.getElementById("para2").innerHTML=cnt
+		setTimeout(function() {
+			// body...
+				cnt++
+
+			document.getElementById("para2").innerHTML=cnt
+		
+		},4000)
+	}
+</script>

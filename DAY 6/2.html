@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="hide_box()">
+	<div class="box" id="box">
+		<div class="head" onclick="show_box()" ></div>
+		<div></div>
+
+
+	</div>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			background: #eee;
+			position: fixed;
+			bottom: 0;
+			border:1px solid;
+			right: 20px
+		}
+		.head{
+			height: 50px;
+			background: red;
+		}
+	</style>
+
+</body>
+<script type="text/javascript">
+	
+	function hide_box() {
+		// body...
+		// alert(1)
+		document.getElementById("box").style.bottom="-150px";
+	}
+
+	function show_box() {
+		// body...
+		val=document.getElementById("box").style.bottom
+
+		if(val=="-150px"){
+			document.getElementById("box").style.bottom="0px"
+		}
+		else{
+			document.getElementById("box").style.bottom="-150px"
+		}
+	}
+
+
+
+
+</script>
+</html>

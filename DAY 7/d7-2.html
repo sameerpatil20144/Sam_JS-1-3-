@@ -1,0 +1,24 @@
+<body onload="show()">
+<script type="text/javascript">
+	function show(){
+			rec= [{name:"nike",count:10},{name:"puma",count:20},{name:"adidas",count:30}]
+			// console.log(rec)
+			str=""
+			for(ans in rec){
+				console.log(ans)
+				console.log(rec[ans])
+				console.log(rec[ans].name)
+				console.log(rec[ans].count)
+			
+			str =str+ "<li>" + rec[ans].name.toUpperCase()+"</li>"
+		}
+		console.log(str)
+		document.getElementById("brand").innerHtml=str
+
+	}
+		
+</script>
+<ul id="brand">
+
+</ul>
+</body>
